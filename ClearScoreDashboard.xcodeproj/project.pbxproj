@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
-		C9A39DEF274C3C1B00991003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEE274C3C1B00991003 /* ViewController.swift */; };
-		C9A39DF2274C3C1B00991003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF0274C3C1B00991003 /* Main.storyboard */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
 		C9A39DF7274C3C1F00991003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF5274C3C1F00991003 /* LaunchScreen.storyboard */; };
+		C9A39E02274C51A100991003 /* ClearScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E01274C51A100991003 /* ClearScoreData.swift */; };
+		C9A39E04274C530A00991003 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E03274C530A00991003 /* NetworkProvider.swift */; };
+		C9A39E06274C540700991003 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E05274C540700991003 /* NetworkError.swift */; };
+		C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E07274C548800991003 /* NetworkExecutor.swift */; };
+		C9A39E0A274C550C00991003 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E09274C550C00991003 /* Network.swift */; };
+		C9A39E0D274C56C800991003 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E0C274C56C800991003 /* URLSession.swift */; };
+		C9A39E0F274D864A00991003 /* ScoreDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */; };
+		C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E10274D877800991003 /* ScoreDashboardView.swift */; };
+		C9A39E13274D89A100991003 /* ClearScoreDashboardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E12274D89A100991003 /* ClearScoreDashboardNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9A39DEE274C3C1B00991003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9A39DF1274C3C1B00991003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9A39DF3274C3C1F00991003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A39DF6274C3C1F00991003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A39DF8274C3C1F00991003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A39E01274C51A100991003 /* ClearScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreData.swift; sourceTree = "<group>"; };
+		C9A39E03274C530A00991003 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		C9A39E05274C540700991003 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C9A39E07274C548800991003 /* NetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecutor.swift; sourceTree = "<group>"; };
+		C9A39E09274C550C00991003 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C9A39E0C274C56C800991003 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardVC.swift; sourceTree = "<group>"; };
+		C9A39E10274D877800991003 /* ScoreDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardView.swift; sourceTree = "<group>"; };
+		C9A39E12274D89A100991003 /* ClearScoreDashboardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreDashboardNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		C9A39DE9274C3C1B00991003 /* ClearScoreDashboard */ = {
 			isa = PBXGroup;
 			children = (
-				C9A39DEA274C3C1B00991003 /* AppDelegate.swift */,
-				C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */,
-				C9A39DEE274C3C1B00991003 /* ViewController.swift */,
-				C9A39DF0274C3C1B00991003 /* Main.storyboard */,
+				C9A39DFE274C4F1400991003 /* Delegates */,
+				C9A39E0B274C558E00991003 /* Extensions */,
+				C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */,
+				C9A39E10274D877800991003 /* ScoreDashboardView.swift */,
+				C9A39E12274D89A100991003 /* ClearScoreDashboardNavigationController.swift */,
+				C9A39DFF274C4F8A00991003 /* Model */,
+				C9A39E00274C502B00991003 /* Networking */,
 				C9A39DF3274C3C1F00991003 /* Assets.xcassets */,
 				C9A39DF5274C3C1F00991003 /* LaunchScreen.storyboard */,
 				C9A39DF8274C3C1F00991003 /* Info.plist */,
 			);
 			path = ClearScoreDashboard;
+			sourceTree = "<group>";
+		};
+		C9A39DFE274C4F1400991003 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C9A39DEA274C3C1B00991003 /* AppDelegate.swift */,
+				C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C9A39DFF274C4F8A00991003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9A39E01274C51A100991003 /* ClearScoreData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9A39E00274C502B00991003 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C9A39E09274C550C00991003 /* Network.swift */,
+				C9A39E07274C548800991003 /* NetworkExecutor.swift */,
+				C9A39E03274C530A00991003 /* NetworkProvider.swift */,
+				C9A39E05274C540700991003 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C9A39E0B274C558E00991003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9A39E0C274C56C800991003 /* URLSession.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +180,6 @@
 			files = (
 				C9A39DF7274C3C1F00991003 /* LaunchScreen.storyboard in Resources */,
 				C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */,
-				C9A39DF2274C3C1B00991003 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +190,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A39DEF274C3C1B00991003 /* ViewController.swift in Sources */,
+				C9A39E0F274D864A00991003 /* ScoreDashboardVC.swift in Sources */,
+				C9A39E02274C51A100991003 /* ClearScoreData.swift in Sources */,
+				C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */,
+				C9A39E0A274C550C00991003 /* Network.swift in Sources */,
+				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
 				C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */,
+				C9A39E13274D89A100991003 /* ClearScoreDashboardNavigationController.swift in Sources */,
+				C9A39E0D274C56C800991003 /* URLSession.swift in Sources */,
+				C9A39E06274C540700991003 /* NetworkError.swift in Sources */,
 				C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */,
+				C9A39E04274C530A00991003 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9A39DF0274C3C1B00991003 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9A39DF1274C3C1B00991003 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9A39DF5274C3C1F00991003 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,19 +346,18 @@
 				INFOPLIST_FILE = ClearScoreDashboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.ClearScoreDashboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,19 +373,18 @@
 				INFOPLIST_FILE = ClearScoreDashboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.ClearScoreDashboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
