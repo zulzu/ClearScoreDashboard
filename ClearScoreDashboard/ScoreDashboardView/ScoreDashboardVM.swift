@@ -1,32 +1,34 @@
 //
-//  ScoreDashboardVC.swift
+//  ScoreDashboardVM.swift
 //  ClearScoreDashboard
 //
 //  Created by Andras Pal on 23/11/2021.
 //
 
-import UIKit
+import Foundation
 
-class ScoreDashboardVC: UIViewController {
+class ScoreDashboardVM {
   
   typealias Work = () -> Void
   typealias Executor = (@escaping Work) -> Void
   
-  private let scoreDashboardView = ScoreDashboardView()
+  //------------------------------------
+  // MARK: Properties
+  //------------------------------------
+  // # Private/Fileprivate
   private let networkProvider: Network
   private let mainExecutor: Executor
   
-  var productData : ClearScoreData?
+  // # Public/Internal/Open
+  var productData: ClearScoreData?
   
+  //=======================================
+  // MARK: Public Methods
+  //=======================================
   init(networkProvider: Network = NetworkProvider(),
        mainExecutor: @escaping Executor = { work in DispatchQueue.main.async { work() } }) {
     self.networkProvider = networkProvider
     self.mainExecutor = mainExecutor
-    super.init(nibName: nil, bundle: nil)
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
   }
   
   func fetchCreditReportInfo() {
@@ -41,9 +43,5 @@ class ScoreDashboardVC: UIViewController {
       }
     }
   }
-  
-  override func loadView() {
-    view = scoreDashboardView
-    fetchCreditReportInfo()
-  }
 }
+
