@@ -26,7 +26,7 @@ class NetworkProvider: Network {
   /// Getting the credit report from the ClearScore backend
   /// - Parameter completion: the callback called after retrieval
   func fetchCreditReport(
-    completion: @escaping (Result<ClearScoreData, NetworkError>) -> Void
+    completion: @escaping (Result<CreditReportInfo, NetworkError>) -> Void
   ) {
     guard let url = URL(string: clearScoreURL) else {
       completion(.failure(.missingUrl))
@@ -45,7 +45,7 @@ class NetworkProvider: Network {
     data: Data?,
     response: URLResponse?,
     error: Error?,
-    completion: @escaping (Result<ClearScoreData, NetworkError>) -> Void
+    completion: @escaping (Result<CreditReportInfo, NetworkError>) -> Void
   ) {
     if let error = error {
       completion(.failure(.apiError(error)))
@@ -60,7 +60,7 @@ class NetworkProvider: Network {
     }
     do {
       let serverResponse = try JSONDecoder().decode(ClearScoreData.self, from: data)
-      completion(.success(serverResponse))
+      completion(.success(serverResponse.creditReportInfo))
       
       //MARK: - Super temp print statement
       print("data: \(serverResponse)")

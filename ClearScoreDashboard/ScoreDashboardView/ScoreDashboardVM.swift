@@ -20,7 +20,7 @@ class ScoreDashboardVM {
   private let mainExecutor: Executor
   
   // # Public/Internal/Open
-  var productData: ClearScoreData?
+  var creditReport: CreditReportInfo?
   
   //=======================================
   // MARK: Public Methods
@@ -38,7 +38,7 @@ class ScoreDashboardVM {
         print (error)
       case let .success(creditReport):
         self.mainExecutor {
-          self.productData = creditReport
+          self.creditReport = creditReport
         }
       }
     }

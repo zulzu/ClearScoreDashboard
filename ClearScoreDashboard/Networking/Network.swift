@@ -9,5 +9,5 @@ import Foundation
 
 protocol Network {
   
-  func fetchCreditReport(completion: @escaping (Result<ClearScoreData, NetworkError>) -> Void)
+  func fetchCreditReport(completion: @escaping (Result<CreditReportInfo, NetworkError>) -> Void)
 }

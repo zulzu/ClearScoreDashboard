@@ -12,7 +12,7 @@ class ScoreDashboardVC: UIViewController {
   private let scoreDashboardView = ScoreDashboardView()
 
   var viewModel = ScoreDashboardVM()
-//  var productData : ClearScoreData?
+//  var creditReport : CreditReportInfo?
   
   override func loadView() {
     view = scoreDashboardView
