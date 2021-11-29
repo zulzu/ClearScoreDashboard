@@ -39,7 +39,10 @@ class ScoreDashboardVC: UIViewController {
   }
   
   private func handleCreditScoreButtonTap(_ customView: ScoreDashboardView) {
-    let scoreDetailsVC = ScoreDetailsVC()
+    guard let creditReport = viewModel.creditReport else {
+      return
+    }
+    let scoreDetailsVC = ScoreDetailsVC(creditReport: creditReport)
     self.navigationController?.pushViewController(scoreDetailsVC, animated: true)
   }
   

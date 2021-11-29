@@ -11,12 +11,24 @@ class ScoreDetailsVC: UIViewController {
     
   private let scoreDetailsView = ScoreDetailsView()
 
-//  var viewModel = ScoreDashboardVM()
-//  var creditReport : CreditReportInfo?
+  private let creditReport : CreditReportInfo
   
   override func loadView() {
     view = scoreDetailsView
     updateNavbar()
+    scoreDetailsView.currentShortTermDebtLabel.text = "Current short term debt: \(creditReport.currentShortTermDebt)"
+  }
+  
+  //=======================================
+  // MARK: Public Methods
+  //=======================================
+  init(creditReport: CreditReportInfo) {
+    self.creditReport = creditReport
+    super.init(nibName: nil, bundle: nil)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
   
   //=======================================

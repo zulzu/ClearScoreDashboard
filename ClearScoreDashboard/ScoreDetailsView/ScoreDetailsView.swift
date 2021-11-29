@@ -28,11 +28,11 @@ class ScoreDetailsView: UIView {
     return bgImage
   }()
   
-  private let title: UILabel = {
+  let currentShortTermDebtLabel: UILabel = {
     let title = UILabel()
     title.font = UIFont.systemFont(ofSize: 16)
-    title.text = "Details Test"
-    title.textColor = .white
+    title.text = ""
+    title.textColor = .black
     title.numberOfLines = 0
     title.textAlignment = .left
     title.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +58,7 @@ class ScoreDetailsView: UIView {
     backgroundColor = .black
     addSubview(bgView)
     bgView.insertSubview(bgImage, at: 0)
-    addSubview(title)
+    addSubview(currentShortTermDebtLabel)
     setupConstraints()
   }
   
@@ -78,9 +78,9 @@ class ScoreDetailsView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      title.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
-      title.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
-      title.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+      currentShortTermDebtLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
+      currentShortTermDebtLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+      currentShortTermDebtLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
     ])
   }
 }
