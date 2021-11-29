@@ -1,13 +1,13 @@
 //
-//  ScoreDashboardView.swift
+//  ScoreDetailsView.swift
 //  ClearScoreDashboard
 //
-//  Created by Andras Pal on 23/11/2021.
+//  Created by Andras Pal on 29/11/2021.
 //
 
 import UIKit
 
-class ScoreDashboardView: UIView {
+class ScoreDetailsView: UIView {
   
   //------------------------------------
   // MARK: Properties
@@ -22,27 +22,23 @@ class ScoreDashboardView: UIView {
   
   private let bgImage: UIImageView = {
     let bgImage = UIImageView(frame: .zero)
-    bgImage.image = UIImage(named: "dashboardBG")
+    bgImage.image = UIImage(named: "detailsBG")
     bgImage.translatesAutoresizingMaskIntoConstraints = false
     bgImage.contentMode = .scaleAspectFill
     return bgImage
   }()
   
-  private let circularButton: UIButton = {
-    let button = UIButton()
-    button.translatesAutoresizingMaskIntoConstraints = false
-    button.backgroundColor = .white.withAlphaComponent(0.7)
-    button.layer.cornerRadius = (UIScreen.main.bounds.width - 80) / 2
-    button.setTitle("Test button", for: .normal)
-    button.setTitleColor(.black, for: .normal)
-    button.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
-    button.layer.borderWidth = 1
-    button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-    return button
+  private let title: UILabel = {
+    let title = UILabel()
+    title.font = UIFont.systemFont(ofSize: 16)
+    title.text = "Details Test"
+    title.textColor = .white
+    title.numberOfLines = 0
+    title.textAlignment = .left
+    title.translatesAutoresizingMaskIntoConstraints = false
+    return title
   }()
-  
-  var creditScoreTappedHandler: ((ScoreDashboardView)->Void)?
-  
+    
   //=======================================
   // MARK: Public Methods
   //=======================================
@@ -55,11 +51,6 @@ class ScoreDashboardView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
   
-  @objc func buttonAction(_ sender:UIButton!)
-  {
-    self.creditScoreTappedHandler?(self)
-  }
-  
   //=======================================
   // MARK: Private Methods
   //=======================================
@@ -67,7 +58,7 @@ class ScoreDashboardView: UIView {
     backgroundColor = .black
     addSubview(bgView)
     bgView.insertSubview(bgImage, at: 0)
-    addSubview(circularButton)
+    addSubview(title)
     setupConstraints()
   }
   
@@ -80,17 +71,16 @@ class ScoreDashboardView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      circularButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 80),
-      circularButton.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 80),
-      circularButton.centerXAnchor.constraint(equalTo: self.bgView.centerXAnchor),
-      circularButton.centerYAnchor.constraint(equalTo: self.bgView.centerYAnchor),
-    ])
-    
-    NSLayoutConstraint.activate([
       bgImage.topAnchor.constraint(equalTo: bgView.topAnchor),
       bgImage.leadingAnchor.constraint(equalTo: bgView.leadingAnchor),
       bgImage.trailingAnchor.constraint(equalTo: bgView.trailingAnchor),
       bgView.bottomAnchor.constraint(equalTo: bgView.bottomAnchor)
+    ])
+    
+    NSLayoutConstraint.activate([
+      title.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
+      title.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+      title.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
     ])
   }
 }

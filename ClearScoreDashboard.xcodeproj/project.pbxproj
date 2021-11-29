@@ -21,6 +21,8 @@
 		C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E10274D877800991003 /* ScoreDashboardView.swift */; };
 		C9A39E13274D89A100991003 /* ClearScoreDashboardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E12274D89A100991003 /* ClearScoreDashboardNavigationController.swift */; };
 		C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E16274D9F2300991003 /* ScoreDashboardVM.swift */; };
+		C9A39E1B2755683A00991003 /* ScoreDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E1A275566A300991003 /* ScoreDetailsVC.swift */; };
+		C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E192755655800991003 /* ScoreDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C9A39E10274D877800991003 /* ScoreDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardView.swift; sourceTree = "<group>"; };
 		C9A39E12274D89A100991003 /* ClearScoreDashboardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreDashboardNavigationController.swift; sourceTree = "<group>"; };
 		C9A39E16274D9F2300991003 /* ScoreDashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardVM.swift; sourceTree = "<group>"; };
+		C9A39E192755655800991003 /* ScoreDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsView.swift; sourceTree = "<group>"; };
+		C9A39E1A275566A300991003 /* ScoreDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				C9A39DFF274C4F8A00991003 /* Model */,
 				C9A39E00274C502B00991003 /* Networking */,
 				C9A39E15274D9E5300991003 /* ScoreDashboardView */,
+				C9A39E182755653A00991003 /* ScoreDetailsView */,
 				C9A39E14274D9E3500991003 /* Shared */,
 				C9A39DF3274C3C1F00991003 /* Assets.xcassets */,
 				C9A39DF5274C3C1F00991003 /* LaunchScreen.storyboard */,
@@ -137,6 +142,15 @@
 				C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */,
 			);
 			path = ScoreDashboardView;
+			sourceTree = "<group>";
+		};
+		C9A39E182755653A00991003 /* ScoreDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				C9A39E192755655800991003 /* ScoreDetailsView.swift */,
+				C9A39E1A275566A300991003 /* ScoreDetailsVC.swift */,
+			);
+			path = ScoreDetailsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +229,9 @@
 				C9A39E0A274C550C00991003 /* Network.swift in Sources */,
 				C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */,
 				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
+				C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */,
 				C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */,
+				C9A39E1B2755683A00991003 /* ScoreDetailsVC.swift in Sources */,
 				C9A39E13274D89A100991003 /* ClearScoreDashboardNavigationController.swift in Sources */,
 				C9A39E0D274C56C800991003 /* URLSession.swift in Sources */,
 				C9A39E06274C540700991003 /* NetworkError.swift in Sources */,
