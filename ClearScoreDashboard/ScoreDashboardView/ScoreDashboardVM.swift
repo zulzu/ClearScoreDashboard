@@ -20,15 +20,22 @@ class ScoreDashboardVM {
   private let mainExecutor: Executor
   
   // # Public/Internal/Open
-  var creditReport: CreditReportInfo?
+  var creditReport: CreditReportInfo? {
+    didSet {
+      self.creditReportDidUpdate()
+    }
+  }
+  let creditReportDidUpdate: () -> ()
   
   //=======================================
   // MARK: Public Methods
   //=======================================
   init(networkProvider: Network = NetworkProvider(),
-       mainExecutor: @escaping Executor = { work in DispatchQueue.main.async { work() } }) {
+       mainExecutor: @escaping Executor = { work in DispatchQueue.main.async { work() } },
+       creditRepDidUpdate: @escaping ()->()) {
     self.networkProvider = networkProvider
     self.mainExecutor = mainExecutor
+    self.creditReportDidUpdate = creditRepDidUpdate
   }
   
   func fetchCreditReportInfo() {

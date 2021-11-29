@@ -61,9 +61,6 @@ class NetworkProvider: Network {
     do {
       let serverResponse = try JSONDecoder().decode(ClearScoreData.self, from: data)
       completion(.success(serverResponse.creditReportInfo))
-      
-      //MARK: - Super temp print statement
-      print("data: \(serverResponse)")
     }
     catch let unsuccessfulQuery {
       completion(.failure(.other(unsuccessfulQuery)))

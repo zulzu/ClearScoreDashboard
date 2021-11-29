@@ -11,8 +11,10 @@ class ScoreDashboardVC: UIViewController {
   
   private let scoreDashboardView = ScoreDashboardView()
   
-  var viewModel = ScoreDashboardVM()
-  //  var creditReport : CreditReportInfo?
+  lazy var viewModel = ScoreDashboardVM(
+    creditRepDidUpdate: { [weak self] in
+      self?.checkCreditReport()
+    })
   
   override func loadView() {
     view = scoreDashboardView
@@ -28,7 +30,7 @@ class ScoreDashboardVC: UIViewController {
   
   //=======================================
   // MARK: Private Methods
-  //=======================================  
+  //=======================================
   private func updateNavbar() {
     let backButton = UIBarButtonItem()
     backButton.title = "Back"
@@ -39,5 +41,13 @@ class ScoreDashboardVC: UIViewController {
   private func handleCreditScoreButtonTap(_ customView: ScoreDashboardView) {
     let scoreDetailsVC = ScoreDetailsVC()
     self.navigationController?.pushViewController(scoreDetailsVC, animated: true)
+  }
+  
+  private func checkCreditReport() {
+    viewModel.creditReport == nil ? print("couldn't retrive the credit report") : print("credit report: \(String(describing: viewModel.creditReport))")
+    guard let score = viewModel.creditReport?.score else {
+      return
+    }
+    self.scoreDashboardView.circularButton.setTitle("\(score)", for: .normal)
   }
 }

@@ -28,12 +28,12 @@ class ScoreDashboardView: UIView {
     return bgImage
   }()
   
-  private let circularButton: UIButton = {
+  let circularButton: UIButton = {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
     button.backgroundColor = .white.withAlphaComponent(0.7)
     button.layer.cornerRadius = (UIScreen.main.bounds.width - 80) / 2
-    button.setTitle("Test button", for: .normal)
+//    button.setTitle("Test button", for: .normal)
     button.setTitleColor(.black, for: .normal)
     button.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
     button.layer.borderWidth = 1
