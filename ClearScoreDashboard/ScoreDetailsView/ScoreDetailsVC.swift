@@ -17,6 +17,10 @@ class ScoreDetailsVC: UIViewController {
     view = scoreDetailsView
     updateNavbar()
     scoreDetailsView.currentShortTermDebtLabel.text = "Current short term debt: \(creditReport.currentShortTermDebt)"
+    scoreDetailsView.currentShortTermCreditLimitLabel.text = "Current short term credit limit: \(creditReport.currentShortTermCreditLimit)"
+    scoreDetailsView.currentLongTermDebtLabel.text = "Current long term debt: \(creditReport.currentLongTermDebt)"
+    scoreDetailsView.percentageCreditUsedLabel.text = "Percentage credit used: \(creditReport.percentageCreditUsed)"
+    scoreDetailsView.daysUntilNextReportLabel.text = "Days until next report: \(creditReport.daysUntilNextReport)"
   }
   
   //=======================================

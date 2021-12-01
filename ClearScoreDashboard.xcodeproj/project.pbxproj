@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0927581E15000A7001 /* UIConstants.swift */; };
+		C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0B2758200E000A7001 /* UIScreen.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C993DB0927581E15000A7001 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		C993DB0B2758200E000A7001 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C993DB0827581DE4000A7001 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C993DB0927581E15000A7001 /* UIConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C9A39DDE274C3C1B00991003 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A39DFE274C4F1400991003 /* Delegates */,
+				C993DB0827581DE4000A7001 /* Utils */,
 				C9A39E0B274C558E00991003 /* Extensions */,
 				C9A39DFF274C4F8A00991003 /* Model */,
 				C9A39E00274C502B00991003 /* Networking */,
@@ -122,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A39E0C274C56C800991003 /* URLSession.swift */,
+				C993DB0B2758200E000A7001 /* UIScreen.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -225,10 +239,12 @@
 			files = (
 				C9A39E0F274D864A00991003 /* ScoreDashboardVC.swift in Sources */,
 				C9A39E02274C51A100991003 /* ClearScoreData.swift in Sources */,
+				C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */,
 				C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */,
 				C9A39E0A274C550C00991003 /* Network.swift in Sources */,
 				C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */,
 				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
+				C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */,
 				C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */,
 				C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */,
 				C9A39E1B2755683A00991003 /* ScoreDetailsVC.swift in Sources */,

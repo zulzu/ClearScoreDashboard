@@ -32,7 +32,7 @@ class ScoreDashboardView: UIView {
     let button = UIButton()
     button.translatesAutoresizingMaskIntoConstraints = false
     button.backgroundColor = .white.withAlphaComponent(0.7)
-    button.layer.cornerRadius = (UIScreen.main.bounds.width - 80) / 2
+    button.layer.cornerRadius = (UIScreen.screenWidth - UI.Padding.XLPadding) / 2
 //    button.setTitle("Test button", for: .normal)
     button.setTitleColor(.black, for: .normal)
     button.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
@@ -80,8 +80,8 @@ class ScoreDashboardView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      circularButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 80),
-      circularButton.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 80),
+      circularButton.widthAnchor.constraint(equalToConstant: UIScreen.screenWidth - UI.Padding.XLPadding),
+      circularButton.heightAnchor.constraint(equalToConstant: UIScreen.screenWidth - UI.Padding.XLPadding),
       circularButton.centerXAnchor.constraint(equalTo: self.bgView.centerXAnchor),
       circularButton.centerYAnchor.constraint(equalTo: self.bgView.centerYAnchor),
     ])

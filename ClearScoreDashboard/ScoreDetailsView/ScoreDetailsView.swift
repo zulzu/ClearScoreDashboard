@@ -27,10 +27,32 @@ class ScoreDetailsView: UIView {
     bgImage.contentMode = .scaleAspectFill
     return bgImage
   }()
-  
+    
   let currentShortTermDebtLabel: UILabel = {
     let title = UILabel()
-    title.font = UIFont.systemFont(ofSize: 16)
+    title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)
+    title.text = ""
+    title.textColor = .black
+    title.numberOfLines = 0
+    title.textAlignment = .left
+    title.translatesAutoresizingMaskIntoConstraints = false
+    return title
+  }()
+  
+  let currentShortTermCreditLimitLabel: UILabel = {
+    let title = UILabel()
+    title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)
+    title.text = ""
+    title.textColor = .black
+    title.numberOfLines = 0
+    title.textAlignment = .left
+    title.translatesAutoresizingMaskIntoConstraints = false
+    return title
+  }()
+  
+  let currentLongTermDebtLabel: UILabel = {
+    let title = UILabel()
+    title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)
     title.text = ""
     title.textColor = .black
     title.numberOfLines = 0
@@ -39,6 +61,28 @@ class ScoreDetailsView: UIView {
     return title
   }()
     
+  let percentageCreditUsedLabel: UILabel = {
+    let title = UILabel()
+    title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)
+    title.text = ""
+    title.textColor = .black
+    title.numberOfLines = 0
+    title.textAlignment = .left
+    title.translatesAutoresizingMaskIntoConstraints = false
+    return title
+  }()
+  
+  let daysUntilNextReportLabel: UILabel = {
+    let title = UILabel()
+    title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)
+    title.text = ""
+    title.textColor = .black
+    title.numberOfLines = 0
+    title.textAlignment = .left
+    title.translatesAutoresizingMaskIntoConstraints = false
+    return title
+  }()
+  
   //=======================================
   // MARK: Public Methods
   //=======================================
@@ -59,6 +103,10 @@ class ScoreDetailsView: UIView {
     addSubview(bgView)
     bgView.insertSubview(bgImage, at: 0)
     addSubview(currentShortTermDebtLabel)
+    addSubview(currentShortTermCreditLimitLabel)
+    addSubview(currentLongTermDebtLabel)
+    addSubview(percentageCreditUsedLabel)
+    addSubview(daysUntilNextReportLabel)
     setupConstraints()
   }
   
@@ -78,9 +126,33 @@ class ScoreDetailsView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      currentShortTermDebtLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
-      currentShortTermDebtLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
-      currentShortTermDebtLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+      currentShortTermDebtLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: UI.Padding.largePadding),
+      currentShortTermDebtLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: UI.Padding.defaultPadding),
+      currentShortTermDebtLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -UI.Padding.defaultPadding),
+    ])
+    
+    NSLayoutConstraint.activate([
+      currentShortTermCreditLimitLabel.topAnchor.constraint(equalTo: currentShortTermDebtLabel.bottomAnchor, constant: UI.Padding.defaultPadding),
+      currentShortTermCreditLimitLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: UI.Padding.defaultPadding),
+      currentShortTermCreditLimitLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -UI.Padding.defaultPadding),
+    ])
+    
+    NSLayoutConstraint.activate([
+      currentLongTermDebtLabel.topAnchor.constraint(equalTo: currentShortTermCreditLimitLabel.bottomAnchor, constant: UI.Padding.defaultPadding),
+      currentLongTermDebtLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: UI.Padding.defaultPadding),
+      currentLongTermDebtLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -UI.Padding.defaultPadding),
+    ])
+    
+    NSLayoutConstraint.activate([
+      percentageCreditUsedLabel.topAnchor.constraint(equalTo: currentLongTermDebtLabel.bottomAnchor, constant: UI.Padding.defaultPadding),
+      percentageCreditUsedLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: UI.Padding.defaultPadding),
+      percentageCreditUsedLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -UI.Padding.defaultPadding),
+    ])
+    
+    NSLayoutConstraint.activate([
+      daysUntilNextReportLabel.topAnchor.constraint(equalTo: percentageCreditUsedLabel.bottomAnchor, constant: UI.Padding.largePadding),
+      daysUntilNextReportLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: UI.Padding.defaultPadding),
+      daysUntilNextReportLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -UI.Padding.defaultPadding),
     ])
   }
 }
