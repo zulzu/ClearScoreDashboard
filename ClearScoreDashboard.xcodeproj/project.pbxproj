@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0927581E15000A7001 /* UIConstants.swift */; };
 		C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0B2758200E000A7001 /* UIScreen.swift */; };
+		C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		C993DB0927581E15000A7001 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		C993DB0B2758200E000A7001 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsVM.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A39E192755655800991003 /* ScoreDetailsView.swift */,
+				C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */,
 				C9A39E1A275566A300991003 /* ScoreDetailsVC.swift */,
 			);
 			path = ScoreDetailsView;
@@ -243,6 +246,7 @@
 				C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */,
 				C9A39E0A274C550C00991003 /* Network.swift in Sources */,
 				C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */,
+				C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */,
 				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
 				C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */,
 				C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */,

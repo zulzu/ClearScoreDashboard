@@ -10,24 +10,23 @@ import UIKit
 class ScoreDetailsVC: UIViewController {
     
   private let scoreDetailsView = ScoreDetailsView()
-
-  private let creditReport : CreditReportInfo
+  private let viewModel: ScoreDetailsVM
   
   override func loadView() {
     view = scoreDetailsView
     updateNavbar()
-    scoreDetailsView.currentShortTermDebtLabel.text = "Current short term debt: \(creditReport.currentShortTermDebt)"
-    scoreDetailsView.currentShortTermCreditLimitLabel.text = "Current short term credit limit: \(creditReport.currentShortTermCreditLimit)"
-    scoreDetailsView.currentLongTermDebtLabel.text = "Current long term debt: \(creditReport.currentLongTermDebt)"
-    scoreDetailsView.percentageCreditUsedLabel.text = "Percentage credit used: \(creditReport.percentageCreditUsed)"
-    scoreDetailsView.daysUntilNextReportLabel.text = "Days until next report: \(creditReport.daysUntilNextReport)"
+    scoreDetailsView.currentShortTermDebtLabel.text = viewModel.currentShortTermDebt()
+    scoreDetailsView.currentShortTermCreditLimitLabel.text = viewModel.currentShortTermCreditLimit()
+    scoreDetailsView.currentLongTermDebtLabel.text = viewModel.currentLongTermDebt()
+    scoreDetailsView.percentageCreditUsedLabel.text = viewModel.percentageCreditUsed()
+    scoreDetailsView.daysUntilNextReportLabel.text = viewModel.daysUntilNextReport()
   }
   
   //=======================================
   // MARK: Public Methods
   //=======================================
-  init(creditReport: CreditReportInfo) {
-    self.creditReport = creditReport
+  init(viewModel: ScoreDetailsVM) {
+    self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
   }
   

@@ -42,7 +42,8 @@ class ScoreDashboardVC: UIViewController {
     guard let creditReport = viewModel.creditReport else {
       return
     }
-    let scoreDetailsVC = ScoreDetailsVC(creditReport: creditReport)
+    let scoreDetailsVM = ScoreDetailsVM(creditReport: creditReport)
+    let scoreDetailsVC = ScoreDetailsVC(viewModel: scoreDetailsVM)
     self.navigationController?.pushViewController(scoreDetailsVC, animated: true)
   }
   
