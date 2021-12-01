@@ -26,6 +26,9 @@ class ScoreDashboardVM {
     }
   }
   let creditReportDidUpdate: () -> ()
+  lazy var buttonTitle = {
+    "Your credit score is " + "\n\(self.creditReport?.score ?? 0)" + "\nout of 700"
+  }
   
   //=======================================
   // MARK: Public Methods

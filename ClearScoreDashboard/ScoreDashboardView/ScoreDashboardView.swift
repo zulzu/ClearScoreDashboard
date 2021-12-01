@@ -33,8 +33,9 @@ class ScoreDashboardView: UIView {
     button.translatesAutoresizingMaskIntoConstraints = false
     button.backgroundColor = .white.withAlphaComponent(0.7)
     button.layer.cornerRadius = (UIScreen.screenWidth - UI.Padding.XLPadding) / 2
-//    button.setTitle("Test button", for: .normal)
     button.setTitleColor(.black, for: .normal)
+    button.titleLabel?.numberOfLines = 3
+    button.titleLabel?.textAlignment = .center
     button.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
     button.layer.borderWidth = 1
     button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
