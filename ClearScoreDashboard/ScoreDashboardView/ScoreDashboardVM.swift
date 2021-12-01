@@ -16,7 +16,7 @@ class ScoreDashboardVM {
   // MARK: Properties
   //------------------------------------
   // # Private/Fileprivate
-  private let networkProvider: Network
+  private let networkProvider: CreditReportService
   private let mainExecutor: Executor
   
   // # Public/Internal/Open
@@ -30,7 +30,7 @@ class ScoreDashboardVM {
   //=======================================
   // MARK: Public Methods
   //=======================================
-  init(networkProvider: Network = NetworkProvider(),
+  init(networkProvider: CreditReportService = NetworkProvider(),
        mainExecutor: @escaping Executor = { work in DispatchQueue.main.async { work() } },
        creditRepDidUpdate: @escaping ()->()) {
     self.networkProvider = networkProvider

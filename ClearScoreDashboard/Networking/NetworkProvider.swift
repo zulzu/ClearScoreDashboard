@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NetworkProvider: Network {
+class NetworkProvider: CreditReportService {
   
   //------------------------------------
   // MARK: Properties

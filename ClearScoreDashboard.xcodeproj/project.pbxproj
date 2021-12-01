@@ -18,7 +18,7 @@
 		C9A39E04274C530A00991003 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E03274C530A00991003 /* NetworkProvider.swift */; };
 		C9A39E06274C540700991003 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E05274C540700991003 /* NetworkError.swift */; };
 		C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E07274C548800991003 /* NetworkExecutor.swift */; };
-		C9A39E0A274C550C00991003 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E09274C550C00991003 /* Network.swift */; };
+		C9A39E0A274C550C00991003 /* CreditReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E09274C550C00991003 /* CreditReportService.swift */; };
 		C9A39E0D274C56C800991003 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E0C274C56C800991003 /* URLSession.swift */; };
 		C9A39E0F274D864A00991003 /* ScoreDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */; };
 		C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E10274D877800991003 /* ScoreDashboardView.swift */; };
@@ -42,7 +42,7 @@
 		C9A39E03274C530A00991003 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		C9A39E05274C540700991003 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C9A39E07274C548800991003 /* NetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecutor.swift; sourceTree = "<group>"; };
-		C9A39E09274C550C00991003 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C9A39E09274C550C00991003 /* CreditReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportService.swift; sourceTree = "<group>"; };
 		C9A39E0C274C56C800991003 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		C9A39E0E274D864A00991003 /* ScoreDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardVC.swift; sourceTree = "<group>"; };
 		C9A39E10274D877800991003 /* ScoreDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardView.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		C9A39E00274C502B00991003 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				C9A39E09274C550C00991003 /* Network.swift */,
+				C9A39E09274C550C00991003 /* CreditReportService.swift */,
 				C9A39E07274C548800991003 /* NetworkExecutor.swift */,
 				C9A39E03274C530A00991003 /* NetworkProvider.swift */,
 				C9A39E05274C540700991003 /* NetworkError.swift */,
@@ -244,7 +244,7 @@
 				C9A39E02274C51A100991003 /* ClearScoreData.swift in Sources */,
 				C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */,
 				C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */,
-				C9A39E0A274C550C00991003 /* Network.swift in Sources */,
+				C9A39E0A274C550C00991003 /* CreditReportService.swift in Sources */,
 				C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */,
 				C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */,
 				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
