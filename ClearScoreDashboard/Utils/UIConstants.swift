@@ -17,10 +17,10 @@ enum UI {
   }
   
   enum Size {
-    static let largeFont: CGFloat = 36
+    static let largeFont: CGFloat = 50
     static let regularFont: CGFloat = 24
     static let smallFont: CGFloat = 16
-    static let cornerRadius: CGFloat = 10
-    static let creditScoreSize: CGFloat = 50
+    static let cornerRadius: CGFloat = 20
+    static let creditScoreSize: CGFloat = 60
   }
 }

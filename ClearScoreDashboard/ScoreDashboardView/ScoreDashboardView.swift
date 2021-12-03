@@ -27,11 +27,9 @@ class ScoreDashboardView: UIView {
     bgImage.contentMode = .scaleAspectFill
     return bgImage
   }()
-  
-  private let circularButtonTap = UITapGestureRecognizer(target: self, action: #selector(circularButtonTap(_:)))
-  
-  let circularButton = CreditScoreButton()
-  
+    
+  // # Public/Internal/Open
+  let circularButton = CreditScoreCircularView()
   var creditScoreTappedHandler: ((ScoreDashboardView)->Void)?
   
   //=======================================
@@ -54,14 +52,13 @@ class ScoreDashboardView: UIView {
   // MARK: Private Methods
   //=======================================
   private func setupView() {
-    backgroundColor = .black
+    let creditScoreGestureRec = UITapGestureRecognizer(target: self, action: #selector(circularButtonTap(_:)))
     addSubview(bgView)
     bgView.insertSubview(bgImage, at: 0)
     addSubview(circularButton)
     circularButton.translatesAutoresizingMaskIntoConstraints = false
     circularButton.layer.cornerRadius = (UIScreen.screenWidth - UI.Padding.XLPadding) / 2
-    circularButton.addGestureRecognizer(circularButtonTap)
-    circularButton.isUserInteractionEnabled = true
+    circularButton.addGestureRecognizer(creditScoreGestureRec)
     setupConstraints()
   }
   
