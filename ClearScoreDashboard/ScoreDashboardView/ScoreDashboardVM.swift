@@ -29,6 +29,11 @@ class ScoreDashboardVM {
   lazy var creditScore = {
     "\(self.creditReport?.score ?? 0)"
   }
+  var netErr: NetworkError? {
+    didSet {
+      self.creditReportDidUpdate()
+    }
+  }
   
   //=======================================
   // MARK: Public Methods
@@ -45,7 +50,9 @@ class ScoreDashboardVM {
     networkProvider.fetchCreditReport() { (result) in
       switch result {
       case let .failure(error):
-        print (error)
+        self.mainExecutor {
+          self.netErr = error
+        }
       case let .success(creditReport):
         self.mainExecutor {
           self.creditReport = creditReport

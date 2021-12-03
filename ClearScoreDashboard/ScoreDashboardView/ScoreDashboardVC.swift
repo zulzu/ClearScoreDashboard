@@ -48,7 +48,8 @@ class ScoreDashboardVC: UIViewController {
   }
   
   private func checkCreditReport() {
-    viewModel.creditReport == nil ? print("couldn't retrive the credit report") : print("credit report: \(String(describing: viewModel.creditReport))")
     self.scoreDashboardView.circularButton.creditScoreLabel.text = viewModel.creditScore()
+    guard let error = viewModel.netErr else { return }
+    self.presentAlert(title: "Error", message: "\(error.locolizedDescription)")
   }
 }

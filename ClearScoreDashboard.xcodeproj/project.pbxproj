@@ -11,6 +11,7 @@
 		C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0B2758200E000A7001 /* UIScreen.swift */; };
 		C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */; };
 		C993DB10275953B2000A7001 /* CreditScoreCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */; };
+		C993DB12275A8933000A7001 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB11275A8933000A7001 /* UIViewController.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		C993DB0B2758200E000A7001 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsVM.swift; sourceTree = "<group>"; };
 		C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCircularView.swift; sourceTree = "<group>"; };
+		C993DB11275A8933000A7001 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A39E0C274C56C800991003 /* URLSession.swift */,
+				C993DB11275A8933000A7001 /* UIViewController.swift */,
 				C993DB0B2758200E000A7001 /* UIScreen.swift */,
 			);
 			path = Extensions;
@@ -246,6 +249,7 @@
 				C9A39E0F274D864A00991003 /* ScoreDashboardVC.swift in Sources */,
 				C9A39E02274C51A100991003 /* ClearScoreData.swift in Sources */,
 				C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */,
+				C993DB12275A8933000A7001 /* UIViewController.swift in Sources */,
 				C9A39E11274D877800991003 /* ScoreDashboardView.swift in Sources */,
 				C9A39E0A274C550C00991003 /* CreditReportService.swift in Sources */,
 				C9A39E17274D9F2300991003 /* ScoreDashboardVM.swift in Sources */,
