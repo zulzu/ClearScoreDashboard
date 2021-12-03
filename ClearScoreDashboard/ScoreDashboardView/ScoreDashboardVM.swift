@@ -27,7 +27,7 @@ class ScoreDashboardVM {
   }
   let creditReportDidUpdate: () -> ()
   lazy var creditScore = {
-    "\(self.creditReport?.score ?? 0)"
+    self.creditReport?.score ?? 0
   }
   var netErr: NetworkError? {
     didSet {
