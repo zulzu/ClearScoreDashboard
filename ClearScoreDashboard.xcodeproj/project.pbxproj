@@ -12,6 +12,13 @@
 		C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */; };
 		C993DB10275953B2000A7001 /* CreditScoreCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */; };
 		C993DB12275A8933000A7001 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB11275A8933000A7001 /* UIViewController.swift */; };
+		C993DB21275B9E02000A7001 /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB20275B9E02000A7001 /* NetworkProviderTests.swift */; };
+		C993DB24275B9F48000A7001 /* EmptyNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */; };
+		C993DB26275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */; };
+		C993DB28275BB259000A7001 /* MockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */; };
+		C993DB2A275BB2C3000A7001 /* CreditReportStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB29275BB2C3000A7001 /* CreditReportStub.swift */; };
+		C993DB2C275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */; };
+		C993DB2E275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -30,12 +37,30 @@
 		C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39E192755655800991003 /* ScoreDetailsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C993DB1B275B985E000A7001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9A39DDF274C3C1B00991003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9A39DE6274C3C1B00991003;
+			remoteInfo = ClearScoreDashboard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C993DB0927581E15000A7001 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		C993DB0B2758200E000A7001 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsVM.swift; sourceTree = "<group>"; };
 		C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCircularView.swift; sourceTree = "<group>"; };
 		C993DB11275A8933000A7001 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C993DB17275B985E000A7001 /* ClearScoreDashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreDashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C993DB20275B9E02000A7001 /* NetworkProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
+		C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNetworkExecutor.swift; sourceTree = "<group>"; };
+		C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMockDataNetworkExecutor.swift; sourceTree = "<group>"; };
+		C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataNetworkExecutor.swift; sourceTree = "<group>"; };
+		C993DB29275BB2C3000A7001 /* CreditReportStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportStub.swift; sourceTree = "<group>"; };
+		C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDecodableMockDataNetworkExecutor.swift; sourceTree = "<group>"; };
+		C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongStatusCodeNetworkExecutor.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C993DB14275B985E000A7001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A39DE4274C3C1B00991003 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,10 +107,33 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C993DB18275B985E000A7001 /* ClearScoreDashboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C993DB22275B9EE8000A7001 /* Helpers */,
+			);
+			path = ClearScoreDashboardTests;
+			sourceTree = "<group>";
+		};
+		C993DB22275B9EE8000A7001 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C993DB29275BB2C3000A7001 /* CreditReportStub.swift */,
+				C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */,
+				C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */,
+				C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */,
+				C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */,
+				C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C9A39DDE274C3C1B00991003 = {
 			isa = PBXGroup;
 			children = (
 				C9A39DE9274C3C1B00991003 /* ClearScoreDashboard */,
+				C993DB18275B985E000A7001 /* ClearScoreDashboardTests */,
+				C993DB20275B9E02000A7001 /* NetworkProviderTests.swift */,
 				C9A39DE8274C3C1B00991003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */,
+				C993DB17275B985E000A7001 /* ClearScoreDashboardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +235,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C993DB16275B985E000A7001 /* ClearScoreDashboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C993DB1D275B985E000A7001 /* Build configuration list for PBXNativeTarget "ClearScoreDashboardTests" */;
+			buildPhases = (
+				C993DB13275B985E000A7001 /* Sources */,
+				C993DB14275B985E000A7001 /* Frameworks */,
+				C993DB15275B985E000A7001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C993DB1C275B985E000A7001 /* PBXTargetDependency */,
+			);
+			name = ClearScoreDashboardTests;
+			productName = ClearScoreDashboardTests;
+			productReference = C993DB17275B985E000A7001 /* ClearScoreDashboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C9A39DE6274C3C1B00991003 /* ClearScoreDashboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A39DFB274C3C1F00991003 /* Build configuration list for PBXNativeTarget "ClearScoreDashboard" */;
@@ -206,6 +280,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					C993DB16275B985E000A7001 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C9A39DE6274C3C1B00991003;
+					};
 					C9A39DE6274C3C1B00991003 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -225,11 +303,19 @@
 			projectRoot = "";
 			targets = (
 				C9A39DE6274C3C1B00991003 /* ClearScoreDashboard */,
+				C993DB16275B985E000A7001 /* ClearScoreDashboardTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C993DB15275B985E000A7001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A39DE5274C3C1B00991003 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +328,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C993DB13275B985E000A7001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C993DB21275B9E02000A7001 /* NetworkProviderTests.swift in Sources */,
+				C993DB28275BB259000A7001 /* MockDataNetworkExecutor.swift in Sources */,
+				C993DB2E275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift in Sources */,
+				C993DB26275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift in Sources */,
+				C993DB2C275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift in Sources */,
+				C993DB24275B9F48000A7001 /* EmptyNetworkExecutor.swift in Sources */,
+				C993DB2A275BB2C3000A7001 /* CreditReportStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A39DE3274C3C1B00991003 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +370,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C993DB1C275B985E000A7001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9A39DE6274C3C1B00991003 /* ClearScoreDashboard */;
+			targetProxy = C993DB1B275B985E000A7001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		C9A39DF5274C3C1F00991003 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -282,6 +390,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C993DB1E275B985E000A7001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.ClearScoreDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearScoreDashboard.app/ClearScoreDashboard";
+			};
+			name = Debug;
+		};
+		C993DB1F275B985E000A7001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U8H9SK8NB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.ClearScoreDashboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearScoreDashboard.app/ClearScoreDashboard";
+			};
+			name = Release;
+		};
 		C9A39DF9274C3C1F00991003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +609,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C993DB1D275B985E000A7001 /* Build configuration list for PBXNativeTarget "ClearScoreDashboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C993DB1E275B985E000A7001 /* Debug */,
+				C993DB1F275B985E000A7001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C9A39DE2274C3C1B00991003 /* Build configuration list for PBXProject "ClearScoreDashboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

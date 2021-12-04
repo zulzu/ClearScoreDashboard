@@ -21,19 +21,19 @@ class ScoreDetailsVM {
 
   // # Public/Internal/Open
   lazy var currentShortTermDebt = {
-    "Current short term debt: " + "\(self.creditReport.currentShortTermDebt)"
+    "Current short term debt: " + "\(String(describing: self.creditReport.currentShortTermDebt))"
   }
   lazy var currentShortTermCreditLimit = {
-    "Current long term debt: " + "\(self.creditReport.currentShortTermCreditLimit)"
+    "Current long term debt: " + "\(String(describing: self.creditReport.currentShortTermCreditLimit))"
   }
   lazy var currentLongTermDebt = {
-    "Current long term debt: " + "\(self.creditReport.currentLongTermDebt)"
+    "Current long term debt: " + "\(String(describing: self.creditReport.currentLongTermDebt))"
   }
   lazy var percentageCreditUsed = {
-    "Percentage credit used: " + "\(self.creditReport.percentageCreditUsed)"
+    "Percentage credit used: " + "\(String(describing: self.creditReport.percentageCreditUsed))"
   }
   lazy var daysUntilNextReport = {
-    "Days until next report: " + "\(self.creditReport.daysUntilNextReport)"
+    "Days until next report: " + "\(String(describing: self.creditReport.daysUntilNextReport))"
   }
   
   //=======================================

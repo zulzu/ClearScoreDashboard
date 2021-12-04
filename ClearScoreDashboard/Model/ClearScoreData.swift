@@ -8,11 +8,11 @@
 import Foundation
 
 // MARK: - ClearScore
-struct ClearScoreData: Codable {
+struct ClearScoreData: Codable, Equatable {
   let creditReportInfo: CreditReportInfo
 }
 
 // MARK: - CreditReportInfo
-struct CreditReportInfo: Codable {
-  let score, percentageCreditUsed, currentShortTermDebt, currentShortTermCreditLimit, currentLongTermDebt, daysUntilNextReport, maxScoreValue: Int
+struct CreditReportInfo: Codable, Equatable {
+  let score, percentageCreditUsed, currentShortTermDebt, currentShortTermCreditLimit, currentLongTermDebt, daysUntilNextReport, maxScoreValue: Int?
 }
