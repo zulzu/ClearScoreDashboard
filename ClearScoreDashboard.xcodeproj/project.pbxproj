@@ -13,12 +13,9 @@
 		C993DB10275953B2000A7001 /* CreditScoreCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */; };
 		C993DB12275A8933000A7001 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB11275A8933000A7001 /* UIViewController.swift */; };
 		C993DB21275B9E02000A7001 /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB20275B9E02000A7001 /* NetworkProviderTests.swift */; };
-		C993DB24275B9F48000A7001 /* EmptyNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */; };
-		C993DB26275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */; };
-		C993DB28275BB259000A7001 /* MockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */; };
 		C993DB2A275BB2C3000A7001 /* CreditReportStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB29275BB2C3000A7001 /* CreditReportStub.swift */; };
-		C993DB2C275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */; };
-		C993DB2E275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */; };
+		C993DB30275BB761000A7001 /* NetworkExecutorBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB2F275BB761000A7001 /* NetworkExecutorBehavior.swift */; };
+		C993DB32275BB7A3000A7001 /* CustomizableNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -55,12 +52,9 @@
 		C993DB11275A8933000A7001 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C993DB17275B985E000A7001 /* ClearScoreDashboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreDashboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C993DB20275B9E02000A7001 /* NetworkProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
-		C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNetworkExecutor.swift; sourceTree = "<group>"; };
-		C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMockDataNetworkExecutor.swift; sourceTree = "<group>"; };
-		C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataNetworkExecutor.swift; sourceTree = "<group>"; };
 		C993DB29275BB2C3000A7001 /* CreditReportStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportStub.swift; sourceTree = "<group>"; };
-		C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDecodableMockDataNetworkExecutor.swift; sourceTree = "<group>"; };
-		C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongStatusCodeNetworkExecutor.swift; sourceTree = "<group>"; };
+		C993DB2F275BB761000A7001 /* NetworkExecutorBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecutorBehavior.swift; sourceTree = "<group>"; };
+		C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableNetworkExecutor.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,11 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				C993DB29275BB2C3000A7001 /* CreditReportStub.swift */,
-				C993DB23275B9F48000A7001 /* EmptyNetworkExecutor.swift */,
-				C993DB25275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift */,
-				C993DB27275BB259000A7001 /* MockDataNetworkExecutor.swift */,
-				C993DB2B275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift */,
-				C993DB2D275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift */,
+				C993DB2F275BB761000A7001 /* NetworkExecutorBehavior.swift */,
+				C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -333,11 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C993DB21275B9E02000A7001 /* NetworkProviderTests.swift in Sources */,
-				C993DB28275BB259000A7001 /* MockDataNetworkExecutor.swift in Sources */,
-				C993DB2E275BB682000A7001 /* WrongStatusCodeNetworkExecutor.swift in Sources */,
-				C993DB26275BA010000A7001 /* EmptyMockDataNetworkExecutor.swift in Sources */,
-				C993DB2C275BB56C000A7001 /* NonDecodableMockDataNetworkExecutor.swift in Sources */,
-				C993DB24275B9F48000A7001 /* EmptyNetworkExecutor.swift in Sources */,
+				C993DB30275BB761000A7001 /* NetworkExecutorBehavior.swift in Sources */,
+				C993DB32275BB7A3000A7001 /* CustomizableNetworkExecutor.swift in Sources */,
 				C993DB2A275BB2C3000A7001 /* CreditReportStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

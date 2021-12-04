@@ -12,9 +12,9 @@ class NetworkProviderTests: XCTestCase {
   
   static let productURL = URL(string: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values")
   
-  func testNetwork_withEmptyData() {
+  func testNetwork_withEmptyResponse() {
     
-    let sut = NetworkProvider(requestExecutor: EmptyNetworkExecutor(expectedURL: NetworkProviderTests.productURL!))
+    let sut = NetworkProvider(requestExecutor: CustomizableNetworkExecutor(behaviour: .emptyResponse, expectedURL: NetworkProviderTests.productURL!))
     
     sut.fetchCreditReport { result in
       
@@ -36,10 +36,10 @@ class NetworkProviderTests: XCTestCase {
     }
   }
   
-  func testNetwork_withEmptyResponse() {
+  func testNetwork_withEmptyData() {
     
-    let sut = NetworkProvider(requestExecutor: EmptyMockDataNetworkExecutor(expectedURL: NetworkProviderTests.productURL!))
-    
+    let sut = NetworkProvider(requestExecutor: CustomizableNetworkExecutor(behaviour: .emptyData, expectedURL: NetworkProviderTests.productURL!))
+
     sut.fetchCreditReport { result in
       switch result {
       case .success(let creditReport):
@@ -52,7 +52,7 @@ class NetworkProviderTests: XCTestCase {
   
   func testNetwork_withMockResponse() {
     
-    let sut = NetworkProvider(requestExecutor: MockDataNetworkExecutor(expectedURL: NetworkProviderTests.productURL!))
+    let sut = NetworkProvider(requestExecutor: CustomizableNetworkExecutor(behaviour: .mockDataReceived, expectedURL: NetworkProviderTests.productURL!))
     let creditReportStub = CreditReportStub()
     let report = creditReportStub.creditReportInfo
     
@@ -70,8 +70,8 @@ class NetworkProviderTests: XCTestCase {
   
   func testNetwork_withNonDecodableResponse() {
     
-    let sut = NetworkProvider(requestExecutor: NonDecodableMockDataNetworkExecutor(expectedURL: NetworkProviderTests.productURL!))
-    
+    let sut = NetworkProvider(requestExecutor: CustomizableNetworkExecutor(behaviour: .nonDecodableData, expectedURL: NetworkProviderTests.productURL!))
+
     sut.fetchCreditReport { result in
       
       switch result {
@@ -90,8 +90,8 @@ class NetworkProviderTests: XCTestCase {
   
   func testNetwork_withWrongStatusCode() {
     
-    let sut = NetworkProvider(requestExecutor: WrongStatusCodeNetworkExecutor(expectedURL: NetworkProviderTests.productURL!))
-    
+    let sut = NetworkProvider(requestExecutor: CustomizableNetworkExecutor(behaviour: .invalidStatusCode, expectedURL: NetworkProviderTests.productURL!))
+
     sut.fetchCreditReport { result in
       
       switch result {
