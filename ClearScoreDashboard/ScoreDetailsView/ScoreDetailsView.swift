@@ -35,6 +35,7 @@ class ScoreDetailsView: UIView {
     return bgView
   }()
     
+  // # Public/Internal/Open
   let currentShortTermDebtLabel: UILabel = {
     let title = UILabel()
     title.font = UIFont.systemFont(ofSize: UI.Size.smallFont)

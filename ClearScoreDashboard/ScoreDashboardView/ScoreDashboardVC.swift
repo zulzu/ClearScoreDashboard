@@ -9,9 +9,14 @@ import UIKit
 
 class ScoreDashboardVC: UIViewController {
   
+  //------------------------------------
+  // MARK: Properties
+  //------------------------------------
+  // # Private/Fileprivate
   private let scoreDashboardView = ScoreDashboardView()
   private let shapeLayer = CAShapeLayer()
   
+  // # Public/Internal/Open
   lazy var viewModel = ScoreDashboardVM(
     creditRepDidUpdate: { [weak self] in
       self?.checkCreditReport()

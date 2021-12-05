@@ -9,6 +9,10 @@ import UIKit
 
 class ScoreDetailsVC: UIViewController {
     
+  //------------------------------------
+  // MARK: Properties
+  //------------------------------------
+  // # Private/Fileprivate
   private let scoreDetailsView = ScoreDetailsView()
   private let viewModel: ScoreDetailsVM
   
