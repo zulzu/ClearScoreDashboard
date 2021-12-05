@@ -9,14 +9,10 @@ import Foundation
 
 class ScoreDetailsVM {
   
-  typealias Work = () -> Void
-  typealias Executor = (@escaping Work) -> Void
-  
   //------------------------------------
   // MARK: Properties
   //------------------------------------
   // # Private/Fileprivate
-  private let mainExecutor: Executor
   private let creditReport : CreditReportInfo
   
   // # Public/Internal/Open
@@ -39,9 +35,7 @@ class ScoreDetailsVM {
   //=======================================
   // MARK: Public Methods
   //=======================================
-  init(mainExecutor: @escaping Executor = { work in DispatchQueue.main.async { work() } },
-       creditReport: CreditReportInfo) {
-    self.mainExecutor = mainExecutor
+  init(creditReport: CreditReportInfo) {
     self.creditReport = creditReport
   }
 }
