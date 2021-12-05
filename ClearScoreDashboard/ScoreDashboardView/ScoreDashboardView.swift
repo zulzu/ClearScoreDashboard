@@ -57,7 +57,7 @@ class ScoreDashboardView: UIView {
     bgView.insertSubview(bgImage, at: 0)
     addSubview(circularButton)
     circularButton.translatesAutoresizingMaskIntoConstraints = false
-    circularButton.layer.cornerRadius = (UIScreen.screenWidth - UI.Padding.XLPadding) / 2
+    circularButton.layer.cornerRadius = (UIScreen.main.bounds.width - UI.Padding.XLPadding) / 2
     circularButton.addGestureRecognizer(creditScoreGestureRec)
     setupConstraints()
   }
@@ -71,8 +71,8 @@ class ScoreDashboardView: UIView {
     ])
     
     NSLayoutConstraint.activate([
-      circularButton.widthAnchor.constraint(equalToConstant: UIScreen.screenWidth - UI.Padding.XLPadding),
-      circularButton.heightAnchor.constraint(equalToConstant: UIScreen.screenWidth - UI.Padding.XLPadding),
+      circularButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - UI.Padding.XLPadding),
+      circularButton.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - UI.Padding.XLPadding),
       circularButton.centerXAnchor.constraint(equalTo: self.bgView.centerXAnchor),
       circularButton.centerYAnchor.constraint(equalTo: self.bgView.centerYAnchor),
     ])

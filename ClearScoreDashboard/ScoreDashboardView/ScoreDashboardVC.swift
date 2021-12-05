@@ -59,7 +59,7 @@ class ScoreDashboardVC: UIViewController {
   private func addCircularProggressBar() {
     let circularPath = UIBezierPath(
       arcCenter: scoreDashboardView.circularButton.creditScoreLabel.center,
-      radius: (UIScreen.screenWidth - UI.Padding.XLPadding) / 2 - 10,
+      radius: (UIScreen.main.bounds.width - UI.Padding.XLPadding) / 2 - 10,
       startAngle: -.pi / 2,
       endAngle: .pi * 1.5,
       clockwise: true

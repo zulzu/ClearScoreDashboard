@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C993DB0A27581E15000A7001 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0927581E15000A7001 /* UIConstants.swift */; };
-		C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0B2758200E000A7001 /* UIScreen.swift */; };
 		C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */; };
 		C993DB10275953B2000A7001 /* CreditScoreCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */; };
 		C993DB12275A8933000A7001 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB11275A8933000A7001 /* UIViewController.swift */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		C993DB0927581E15000A7001 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
-		C993DB0B2758200E000A7001 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		C993DB0D275824DE000A7001 /* ScoreDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailsVM.swift; sourceTree = "<group>"; };
 		C993DB0F275953B2000A7001 /* CreditScoreCircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCircularView.swift; sourceTree = "<group>"; };
 		C993DB11275A8933000A7001 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			children = (
 				C9A39E0C274C56C800991003 /* URLSession.swift */,
 				C993DB11275A8933000A7001 /* UIViewController.swift */,
-				C993DB0B2758200E000A7001 /* UIScreen.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,7 +349,6 @@
 				C993DB0E275824DE000A7001 /* ScoreDetailsVM.swift in Sources */,
 				C993DB10275953B2000A7001 /* CreditScoreCircularView.swift in Sources */,
 				C9A39E08274C548800991003 /* NetworkExecutor.swift in Sources */,
-				C993DB0C2758200E000A7001 /* UIScreen.swift in Sources */,
 				C9A39E1C2755683D00991003 /* ScoreDetailsView.swift in Sources */,
 				C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */,
 				C9A39E1B2755683A00991003 /* ScoreDetailsVC.swift in Sources */,

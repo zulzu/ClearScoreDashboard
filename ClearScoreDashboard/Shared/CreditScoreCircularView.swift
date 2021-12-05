@@ -17,7 +17,7 @@ class CreditScoreCircularView: UIView {
     let bgView = UIView()
     bgView.backgroundColor = .white
     bgView.translatesAutoresizingMaskIntoConstraints = false
-    bgView.layer.cornerRadius = (UIScreen.screenWidth - UI.Padding.XLPadding) / 2
+    bgView.layer.cornerRadius = (UIScreen.main.bounds.width - UI.Padding.XLPadding) / 2
     bgView.layer.borderWidth = 1
     bgView.layer.borderColor = UIColor.black.withAlphaComponent(0.5).cgColor
     return bgView
