@@ -14,5 +14,11 @@ struct ClearScoreData: Codable, Equatable {
 
 // MARK: - CreditReportInfo
 struct CreditReportInfo: Codable, Equatable {
-  let score, percentageCreditUsed, currentShortTermDebt, currentShortTermCreditLimit, currentLongTermDebt, daysUntilNextReport, maxScoreValue: Int?
+  let score: Int?
+  let percentageCreditUsed: Int?
+  let currentShortTermDebt: Int?
+  let currentShortTermCreditLimit: Int?
+  let currentLongTermDebt: Int?
+  let daysUntilNextReport: Int?
+  let maxScoreValue: Int?
 }

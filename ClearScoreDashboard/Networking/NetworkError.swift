@@ -9,7 +9,10 @@ import Foundation
 
 enum NetworkError: Error {
   
-  case missingUrl, apiError(Error), invalidResponse, other(Error)
+  case missingUrl
+  case apiError(Error)
+  case invalidResponse
+  case other(Error)
   
   var locolizedDescription: String {
     switch self {
