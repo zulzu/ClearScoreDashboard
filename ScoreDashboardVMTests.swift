@@ -23,4 +23,15 @@ class ScoreDashboardVMTests: XCTestCase {
     XCTAssertFalse(sut.creditReport?.maxScoreValue == 5)
     XCTAssertTrue(sut.creditReport?.daysUntilNextReport == 1)
   }
+  
+  func testCreditReportError() {
+    
+    let sut = ScoreDashboardVM(networkProvider: MockFailedCreditReportService(),
+                               mainExecutor: { work in work() },
+                               creditRepDidUpdate: {})
+    
+    sut.fetchCreditReportInfo()
+    XCTAssertTrue(sut.netErr?.locolizedDescription == NetworkError.invalidResponse.locolizedDescription)
+    XCTAssertFalse(sut.creditReport != nil)
+  }
 }

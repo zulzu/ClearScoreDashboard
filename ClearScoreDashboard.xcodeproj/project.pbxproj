@@ -17,6 +17,7 @@
 		C993DB32275BB7A3000A7001 /* CustomizableNetworkExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */; };
 		C993DB34275D3EED000A7001 /* ScoreDashboardVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB33275D3EED000A7001 /* ScoreDashboardVMTests.swift */; };
 		C993DB38275D40FC000A7001 /* MockCreditReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB37275D40FC000A7001 /* MockCreditReportService.swift */; };
+		C993DB3A275E3C49000A7001 /* MockFailedCreditReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DB39275E3C49000A7001 /* MockFailedCreditReportService.swift */; };
 		C9A39DEB274C3C1B00991003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEA274C3C1B00991003 /* AppDelegate.swift */; };
 		C9A39DED274C3C1B00991003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */; };
 		C9A39DF4274C3C1F00991003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A39DF3274C3C1F00991003 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizableNetworkExecutor.swift; sourceTree = "<group>"; };
 		C993DB33275D3EED000A7001 /* ScoreDashboardVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardVMTests.swift; sourceTree = "<group>"; };
 		C993DB37275D40FC000A7001 /* MockCreditReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCreditReportService.swift; sourceTree = "<group>"; };
+		C993DB39275E3C49000A7001 /* MockFailedCreditReportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailedCreditReportService.swift; sourceTree = "<group>"; };
 		C9A39DE7274C3C1B00991003 /* ClearScoreDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScoreDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A39DEA274C3C1B00991003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A39DEC274C3C1B00991003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C993DB37275D40FC000A7001 /* MockCreditReportService.swift */,
+				C993DB39275E3C49000A7001 /* MockFailedCreditReportService.swift */,
 				C993DB29275BB2C3000A7001 /* CreditReportStub.swift */,
 				C993DB2F275BB761000A7001 /* NetworkExecutorBehavior.swift */,
 				C993DB31275BB7A3000A7001 /* CustomizableNetworkExecutor.swift */,
@@ -332,6 +335,7 @@
 				C993DB32275BB7A3000A7001 /* CustomizableNetworkExecutor.swift in Sources */,
 				C993DB34275D3EED000A7001 /* ScoreDashboardVMTests.swift in Sources */,
 				C993DB2A275BB2C3000A7001 /* CreditReportStub.swift in Sources */,
+				C993DB3A275E3C49000A7001 /* MockFailedCreditReportService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
